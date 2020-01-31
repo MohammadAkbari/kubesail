@@ -78,6 +78,8 @@ export default class AppContent extends Component {
                 />
 
                 <AuthContent api={this.state.api} user={this.state.user} />
+
+                <div>v 1.2</div>
             </>
         );
     }
