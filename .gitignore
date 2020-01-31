@@ -7,3 +7,5 @@
 /.vs/KubeSail/v16/Server/sqlite3
 /Clients/mvc1/bin/Debug/netcoreapp3.1
 /Clients/mvc1/obj
+/.vs/KubeSail
+/Clients/spa2/obj
