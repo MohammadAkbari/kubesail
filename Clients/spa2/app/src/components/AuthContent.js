@@ -35,10 +35,10 @@ export default class AuthContent extends Component {
     handleSubmit(e) {
         e.preventDefault();
 
-        const { name, needAuthorize } = this.form;
+        const form = e.target.form;
 
         this.apiService
-            .postBook({ name: name, needAuthorize: needAuthorize })
+            .postBook({ name: form.name.value, needAuthorize: form.needAuthorize.value })
             .then((data) => {
                 this.loadBooks();
             })
