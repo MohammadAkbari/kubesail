@@ -15,7 +15,7 @@ const settings = {
 Log.logger = console;
 Log.level = Log.INFO;
 
-const userManager = new UserManager(settings);
+let userManager = new UserManager(settings);
 
 export default {
     getUser() {
