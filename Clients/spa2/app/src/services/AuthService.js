@@ -15,19 +15,19 @@ const settings = {
 Log.logger = console;
 Log.level = Log.INFO;
 
-let userManager = new UserManager(settings);
+let manager = new UserManager(settings);
 
 export default {
     getUser() {
-        return userManager.getUser();
+        return manager.getUser();
     },
     login() {
-        return userManager.signinRedirect();
+        return manager.signinRedirect();
     },
     renewToken() {
-        return userManager.signinSilent();
+        return manager.signinSilent();
     },
     logout() {
-        return userManager.signoutRedirect();
+        return manager.signoutRedirect();
     }
 }
