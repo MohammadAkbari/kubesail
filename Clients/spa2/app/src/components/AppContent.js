@@ -49,7 +49,7 @@ export default class AppContent extends Component {
     };
 
     logout = () => {
-        this.authService.logout();
+        authService.logout();
     };
 
     getUser = () => {
